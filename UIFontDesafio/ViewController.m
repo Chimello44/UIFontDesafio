@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize Nome,caixa;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +25,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)fonte:(id)sender {
+    NSLog(@"foi");
+    [Nome setFont:[UIFont fontWithName:[sender currentTitle] size:20] ];
+    
+    
+}
+
+- (IBAction)alterar:(id)sender {
+    [Nome setText:[caixa text]];
+    [caixa resignFirstResponder];
+}
+
+
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [caixa resignFirstResponder];
+}
 @end

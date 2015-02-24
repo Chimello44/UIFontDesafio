@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *Nome;
+@property (weak, nonatomic) IBOutlet UITextField *caixa;
 
+- (IBAction)fonte:(id)sender;
+- (IBAction)alterar:(id)sender;
 
 @end
 
