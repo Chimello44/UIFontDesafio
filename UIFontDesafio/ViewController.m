@@ -42,5 +42,5 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [caixa resignFirstResponder];
-}
+}//ou apenas no viewDidLoad [self.view endEditing:Yes];
 @end
